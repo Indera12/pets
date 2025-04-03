@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #fff;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,12 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -267,9 +272,9 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .nav-links {
+    /* .nav-links {
         display: none;
-    }
+    } */
     
     .slide-content h2 {
         font-size: 2rem;
@@ -284,3 +289,7 @@ footer {
         font-size: 1rem;
     }
 } 
+.logo-image {
+    width: 150px;
+    height: 150px;
+}
